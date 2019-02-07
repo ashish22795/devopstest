@@ -82,7 +82,7 @@
         <activeByDefault>true</activeByDefault>
       </activation>
       <properties>
-        <profile>default.substvar</profile>
+        <profile>WindowsProfile.substvar</profile>
       </properties>
     </profile>
   </profiles>
