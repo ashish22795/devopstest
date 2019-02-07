@@ -15,8 +15,8 @@
     <bw.Home></bw.Home>
     <project.type>None</project.type>
     <failIfNoTests>false</failIfNoTests>
-    <tibco.Home></tibco.Home>	
-    <appSpace>devopstest_appspace</appSpace>
+    <tibco.Home></tibco.Home>
+	<appSpace>devopstest_appspace</appSpace>
     <keystorePath></keystorePath>
     <profile>WindowsProfile.substvar</profile>
     <backup>false</backup>
@@ -47,7 +47,7 @@
         <artifactId>bw6-maven-plugin</artifactId>
         <version>2.1.0</version>
         <extensions>true</extensions>
-	<configuration>
+		<configuration>
           <deployToAdmin>${deployToAdmin}</deployToAdmin>
           <agentHost>${agentHost}</agentHost>
           <agentPort>${agentPort}</agentPort>
@@ -75,7 +75,7 @@
       </plugin>
     </plugins>
   </build>
-  <profiles>
+   <profiles>
     <profile>
       <id>DEFAULT</id>
       <activation>
