@@ -11,11 +11,6 @@
   <artifactId>tibco.bw.sample.palette.http.RequestResponse.application</artifactId>
   <packaging>bwear</packaging>
   <properties>
-    <skipTests>false</skipTests>
-    <bw.Home></bw.Home>
-    <project.type>None</project.type>
-    <failIfNoTests>false</failIfNoTests>
-    <tibco.Home></tibco.Home>
     <appSpace>devopstest_appspace</appSpace>
     <keystorePath></keystorePath>
     <profile>WindowsProfile.substvar</profile>
@@ -47,7 +42,7 @@
         <artifactId>bw6-maven-plugin</artifactId>
         <version>2.1.0</version>
         <extensions>true</extensions>
-	  <configuration>
+	<configuration>
           <deployToAdmin>${deployToAdmin}</deployToAdmin>
           <agentHost>${agentHost}</agentHost>
           <agentPort>${agentPort}</agentPort>
@@ -86,13 +81,4 @@
       </properties>
     </profile>
   </profiles>
-  <reporting>
-    <plugins>
-      <plugin>
-        <groupId>com.tibco.plugins</groupId>
-        <artifactId>bw6-maven-plugin</artifactId>
-        <version>2.1.0</version>
-      </plugin>
-    </plugins>
-  </reporting>
 </project>
