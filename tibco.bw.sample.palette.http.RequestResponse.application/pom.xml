@@ -82,4 +82,5 @@
       </properties>
     </profile>
   </profiles>
+  <distributionManagement/>
 </project>
