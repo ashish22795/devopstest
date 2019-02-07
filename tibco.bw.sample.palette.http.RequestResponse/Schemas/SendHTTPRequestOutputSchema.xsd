@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions" xmlns:tns="http://www.tibco.com/namespaces/tnt/plugins/sendhttprequest/output/618c1333-2bbd-4817-845f-b51da4d5e71b" targetNamespace="http://www.tibco.com/namespaces/tnt/plugins/sendhttprequest/output/618c1333-2bbd-4817-845f-b51da4d5e71b">
+  <complexType name="OutputHeaders" tibex:source="bw.http.sendHTTPRequest">
+    <sequence>
+      <element maxOccurs="1" minOccurs="0" name="Allow" type="string"/>
+      <element maxOccurs="1" minOccurs="0" name="Content-Type" type="string"/>
+      <element maxOccurs="1" minOccurs="0" name="Content-Length" type="string"/>
+      <element maxOccurs="1" minOccurs="0" name="Content-Encoding" type="string"/>
+      <element maxOccurs="1" minOccurs="0" name="Date" type="string"/>
+      <element maxOccurs="1" minOccurs="0" name="Location" type="string"/>
+      <element maxOccurs="unbounded" minOccurs="0" name="Set-Cookie" type="string"/>
+      <element maxOccurs="1" minOccurs="0" name="Pragma" type="string"/>
+    </sequence>
+  </complexType>
+</schema>
