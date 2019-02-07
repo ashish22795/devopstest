@@ -15,7 +15,30 @@
     <bw.Home></bw.Home>
     <project.type>None</project.type>
     <failIfNoTests>false</failIfNoTests>
-    <tibco.Home></tibco.Home>
+    <tibco.Home></tibco.Home>	
+	<appSpace>devopstest_appspace</appSpace>
+    <keystorePath></keystorePath>
+    <profile>default.substvar</profile>
+    <backup>false</backup>
+    <truststorePath></truststorePath>
+    <domainDesc></domainDesc>
+    <agentPort>8079</agentPort>
+    <truststorePassword></truststorePassword>
+    <agentAuth></agentAuth>
+    <agentHost>ashivata-t470.apac.tibco.com</agentHost>
+    <httpPort>9210</httpPort>
+    <appNode>devopstest_appnode</appNode>
+    <osgiPort>9710</osgiPort>
+    <appSpaceDesc></appSpaceDesc>
+    <redeploy>true</redeploy>
+    <keystorePassword></keystorePassword>
+    <backupLocation></backupLocation>
+    <agentPassword>admin</agentPassword>
+    <appNodeDesc></appNodeDesc>
+    <agentSSL>false</agentSSL>
+    <agentUsername>admin</agentUsername>
+    <domain>BW6-DEV1</domain>
+    <deployToAdmin>true</deployToAdmin>
   </properties>
   <build>
     <plugins>
@@ -24,6 +47,31 @@
         <artifactId>bw6-maven-plugin</artifactId>
         <version>2.1.0</version>
         <extensions>true</extensions>
+		<configuration>
+          <deployToAdmin>${deployToAdmin}</deployToAdmin>
+          <agentHost>${agentHost}</agentHost>
+          <agentPort>${agentPort}</agentPort>
+          <agentAuth>${agentAuth}</agentAuth>
+          <agentUsername>${agentUsername}</agentUsername>
+          <agentPassword>${agentPassword}</agentPassword>
+          <agentSSL>${agentSSL}</agentSSL>
+          <truststorePath>${truststorePath}</truststorePath>
+          <truststorePassword>${truststorePassword}</truststorePassword>
+          <keystorePath>${keystorePath}</keystorePath>
+          <keystorePassword>${keystorePassword}</keystorePassword>
+          <domain>${domain}</domain>
+          <domainDesc>${domainDesc}</domainDesc>
+          <appSpace>${appSpace}</appSpace>
+          <appSpaceDesc>${appSpaceDesc}</appSpaceDesc>
+          <appNode>${appNode}</appNode>
+          <appNodeDesc>${appNodeDesc}</appNodeDesc>
+          <osgiPort>${osgiPort}</osgiPort>
+          <httpPort>${httpPort}</httpPort>
+          <redeploy>${redeploy}</redeploy>
+          <backup>${backup}</backup>
+          <backupLocation>${backupLocation}</backupLocation>
+          <profile>${profile}</profile>
+        </configuration>
       </plugin>
     </plugins>
   </build>
