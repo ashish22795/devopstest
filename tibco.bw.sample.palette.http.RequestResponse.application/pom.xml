@@ -75,6 +75,17 @@
       </plugin>
     </plugins>
   </build>
+  <profiles>
+    <profile>
+      <id>DEFAULT</id>
+      <activation>
+        <activeByDefault>true</activeByDefault>
+      </activation>
+      <properties>
+        <profile>default.substvar</profile>
+      </properties>
+    </profile>
+  </profiles>
   <reporting>
     <plugins>
       <plugin>
