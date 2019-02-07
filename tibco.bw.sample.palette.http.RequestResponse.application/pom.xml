@@ -11,6 +11,7 @@
   <artifactId>tibco.bw.sample.palette.http.RequestResponse.application</artifactId>
   <packaging>bwear</packaging>
   <properties>
+    <skipTests>true</skipTests>
     <appSpace>devopstest_appspace</appSpace>
     <keystorePath></keystorePath>
     <profile>WindowsProfile.substvar</profile>
