@@ -21,7 +21,7 @@
     <agentPort>8079</agentPort>
     <truststorePassword></truststorePassword>
     <agentAuth></agentAuth>
-    <agentHost>ashivata-t470</agentHost>
+    <agentHost>ashivata-t470.apac.tibco.com</agentHost>
     <httpPort>9210</httpPort>
     <appNode>devopstest_appnode</appNode>
     <osgiPort>9710</osgiPort>
