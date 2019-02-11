@@ -1,0 +1,9 @@
+node{
+  stage ('SCM Checkout'){
+  git 'https://github.com/ashish22795/devopstest' 
+  }
+  stage ('Compile-Package'){
+  sh 'mvn clean package' 
+  }
+
+}
